@@ -87,7 +87,7 @@ async function futureOpenCheckinDate(roomId: number) {
     let checkOut = new Date(currentBookings.bookings[i].bookingdates.checkout);
 
     if (today > checkOut) {
-      //   console.log("do nothing because the booking is in the past");
+      //console.log("do nothing because the booking is in the past");
     } else {
       //pushing the checkout date into an array
       checkOutArray.push(checkOut);

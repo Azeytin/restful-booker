@@ -7,9 +7,9 @@ import {
 import { createRoom, createRooms } from "./lib/datafactory/room";
 
 // createRoom("101");
-// createRooms(2);
+createRooms(10);
 // getBookings(1);
 // futureOpenCheckinDate(1);
 // createBooking(2, new Date());
 
-createFutureBookings(1, 10);
+// createFutureBookings(1, 10);

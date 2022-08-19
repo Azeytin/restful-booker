@@ -15,7 +15,7 @@ async function createRoom(roomNumber: string) {
   const roomName = roomNumber || faker.mersenne.rand(200, 1000).toString();
   const randomPrice = faker.mersenne.rand(110, 125);
   const randomDescription = faker.company.bs();
-  const catImage = faker.image.cats(undefined, undefined, true);
+  const catImage = "https://www.mwtestconsultancy.co.uk/img/404.png"; //faker.image.cats(undefined, undefined, true);
 
   const createRequestContext = await request.newContext();
   const response = await createRequestContext.post(roomUrl + "/room/", {
